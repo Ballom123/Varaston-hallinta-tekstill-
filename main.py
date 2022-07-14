@@ -78,7 +78,7 @@ class Varasto:
         if tuote in self.tuotteet:
             print(f"Esinettä {tuote} varastossa {self.tuotteet[tuote]} kpl")
         elif tuote not in self.tuotteet:
-            print("Esinettä sukat ei löydy varastosta")
+            print("Esinettä {tuote} ei löydy varastosta")
 
     def apua(self):
         return print(f"Komennot:\n lisaa <esine> -- lisää yhden kappaleen esinettä varastoon\n listaa -- listaa kaikki varaston esineet\n hae <esine> -- kertoo esineen varastotilanteen\n poista <esine> -- poistaa yhden kappaleen esinettä varastosta\n apua -- tulostaa komennot\n lopeta -- lopettaa ohjelman suorituksen")
